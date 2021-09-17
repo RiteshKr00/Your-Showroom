@@ -4,7 +4,7 @@ Project initialize with tailwind CSS, Three Js, react-router-dom and react-chatb
 
 ## Tagline
 
-A way new to buy cars
+A  new way to buy cars
 
 ## Problems It Solves
 
