@@ -1,6 +1,4 @@
 import React, { Suspense, useRef, useState } from "react"
-import * as THREE from 'three'
-import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Canvas } from "@react-three/fiber"
 import { ContactShadows, Environment, useGLTF, OrbitControls } from "@react-three/drei"
 import { proxy, useSnapshot } from "valtio"
@@ -139,7 +137,7 @@ function Details() {
     else if (snap.current === "mat_15") {
         return (
             <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-                <h1 className="text-3xl uppercase">Front Glass</h1>
+                <h1 className="text-3xl uppercase">Windshield</h1>
                 <p className="text-xl text-justify">The first piece of glass that you encounter on most vehicles is its windshield. Also known as a windscreen on European cars. The windshield plays a critical role in supporting the structure of the car and protecting the driver and passengers.</p>
             </div>
         )

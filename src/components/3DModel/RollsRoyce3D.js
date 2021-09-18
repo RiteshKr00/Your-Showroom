@@ -1,6 +1,4 @@
 import React, { Suspense, useRef, useState } from "react"
-import * as THREE from 'three'
-import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Canvas } from "@react-three/fiber"
 import { ContactShadows, Environment, useGLTF, OrbitControls } from "@react-three/drei"
 import { proxy, useSnapshot } from "valtio"
@@ -200,50 +198,61 @@ function Model(props) {
 function Details() {
 
     const snap = useSnapshot(state)
-    // if (snap.current === "mat_14") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">Tyre</h1>
-    //             <p className="text-xl text-justify">265/35R19 front tyres with 19×9.5 inch AMG light-alloy wheels and AMG 20×11.5-inch light-alloy wheels with 325/30R20 tyres (Dunlop Sport Maxx GT tyres), 6-piston front calipers with 390×36mm discs and 4-piston calipers with 360×26mm discs.</p>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "mat_9") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">Headlamp</h1>
-    //             <p className="text-xl text-justify">A headlamp is a lamp attached to the front of a vehicle to illuminate the road ahead. Headlamps are also often called headlights, but in the most precise usage, headlamp is the term for the device itself and headlight is the term for the beam of light produced and distributed by the device.</p>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "mat_0") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">Body</h1>
-    //             <p className="text-xl text-justify">Body style include 2-doors and retractable hardtop. ABC (Active Body Control) was improved to reduce body movements in dynamic driving by up to 60%, standard on all models except the SL 350.</p>
-    //         </div>
-    //     )
-    // }
-    // else if (snap.current === "mat_15") {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-3xl uppercase">Front Glass</h1>
-    //             <p className="text-xl text-justify">The first piece of glass that you encounter on most vehicles is its windshield. Also known as a windscreen on European cars. The windshield plays a critical role in supporting the structure of the car and protecting the driver and passengers.</p>
-    //         </div>
-    //     )
-    // }
-    // else {
-    //     return (
-    //         <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
-    //             <h1 className="text-2xl tracking-wider">Click on the different parts of car to know more</h1>
-    //         </div>
-    //     )
-    // }
-    return (
-        <div>
-            {snap.current}
-        </div>
-    )
+    if (snap.current === "wheel_rubber_shad") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">Tyre</h1>
+                <p className="text-xl text-justify">The modern spinner device is a decorative kinetic attachment to the wheel of an automobile. The spinner covers the center of a car's wheel and is designed to independently rotate by using one or more roller bearings to isolate the spinner from the wheel, enabling it to turn while the wheel is at rest.</p>
+            </div>
+        )
+    }
+    else if (snap.current === "light_glass_shad") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">Headlamp</h1>
+                <p className="text-xl text-justify">A headlamp is a lamp attached to the front of a vehicle to illuminate the road ahead. Headlamps are also often called headlights, but in the most precise usage, headlamp is the term for the device itself and headlight is the term for the beam of light produced and distributed by the device.</p>
+            </div>
+        )
+    }
+    else if (snap.current === "primary_paint_shad") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">Body</h1>
+                <p className="text-xl text-justify">In 1939, Rolls-Royce brought one of the specialist coachbuilders completely in-house by buying the remaining capital of Park Ward Limited which, since 1936, in conjunction with Rolls-Royce had been building short production runs of all-metal saloon bodies on Bentley chassis.</p>
+            </div>
+        )
+    }
+    else if (snap.current === "secondary_paint_shad") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">6.7 L V12</h1>
+                <p className="text-xl text-justify">The Ghost was designed by Andreas Thurner and engineered by Helmut Riedl, who led the development of the larger Rolls-Royce Phantom. The Ghost, codenamed RR04 during its design phase, was developed to compete with vehicles significantly less expensive than the Phantom, such as the Bentley Flying Spur and V12 engine versions of the Mercedes-Benz S-Class.</p>
+            </div>
+        )
+    }
+    else if (snap.current === "int_blocking_shad") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">Wraith Back Seat</h1>
+                <p className="text-xl text-justify">The Rolls Royce Wraith back seat design brings to mind a yacht on the open ocean with its Bookmatched Canadel panelling, a contemporary open-grain veneer, along with plenty of air vents on the center stack for circulation.</p>
+            </div>
+        )
+    }
+    else if (snap.current === "windshield_shad1") {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-3xl uppercase">Windshield</h1>
+                <p className="text-xl text-justify">The first piece of glass that you encounter on most vehicles is its windshield. Also known as a windscreen on European cars. The windshield plays a critical role in supporting the structure of the car and protecting the driver and passengers.</p>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div className="h-full md:flex md:flex-col md:justify-center font-fontVollkorn">
+                <h1 className="text-2xl tracking-wider">Click on the different parts of car to know more</h1>
+            </div>
+        )
+    }
 }
 
 export default function Perseverance() {
@@ -256,7 +265,7 @@ export default function Perseverance() {
                         <ambientLight intensity={0.7} />
                         <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
                         <Suspense fallback={null}>
-                            <Model scale={1.5} />
+                            <Model scale={2} />
                             <Environment preset="city" />
                             <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                         </Suspense>

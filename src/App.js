@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from "./pages/Home"
-import BMW from './pages/BMW'
-import Ford from './pages/Ford'
-import Mercedes from './pages/Mercedes'
-import RollsRoyce from './pages/RollsRoyce'
+import Home from "./pages/Home/Home"
+import BMW from './pages/3DModelPage/BMW'
+import Ford from './pages/3DModelPage/Ford'
+import Mercedes from './pages/3DModelPage/Mercedes'
+import RollsRoyce from './pages/3DModelPage/RollsRoyce'
+import Chatbot from "./components/Chatbot/Chatbot"
 import './App.css';
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Route path='/mercedes' exact component={Mercedes} />
         <Route path='/rollsRoyce' exact component={RollsRoyce} />
       </Switch>
+
+      <Chatbot />
 
     </Router>
   );
