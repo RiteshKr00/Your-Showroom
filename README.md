@@ -11,7 +11,7 @@ A way new to buy cars
 ## Live demo
 
 The site is deployed throught Vercel, which you can view from [here]()  
-Checkout the ppt from [here](n)
+Checkout the ppt from [here]()
 
 ## Demo video
 

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from "./pages/Home"
+import BMW from './pages/BMW'
+import Ford from './pages/Ford'
+import Mercedes from './pages/Mercedes'
+import RollsRoyce from './pages/RollsRoyce'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/bmw' exact component={BMW} />
+        <Route path='/ford' exact component={Ford} />
+        <Route path='/mercedes' exact component={Mercedes} />
+        <Route path='/rollsRoyce' exact component={RollsRoyce} />
+      </Switch>
+
+    </Router>
   );
 }
 
