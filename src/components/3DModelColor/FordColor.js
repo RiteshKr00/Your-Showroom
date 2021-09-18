@@ -102,7 +102,17 @@ function Picker() {
 export default function FordColor() {
     return (
         <div className="w-full h-screen my-12 px-4 pt-16 outline-none cursor-pointer lg:block">
-            <Canvas shadows dpr={[1, 2]} camera={{ position: [4, 4, 4], fov: 50 }}>
+            {/* <Canvas shadows dpr={[1, 2]} camera={{ position: [4, 4, 4], fov: 50 }}>
+                <ambientLight intensity={0.9} />
+                <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
+                <Suspense fallback={null}>
+                    <Model scale={0.005} />
+                    <Environment preset="city" />
+                    <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
+                </Suspense>
+                <OrbitControls />
+            </Canvas> */}
+            <Canvas shadows dpr={[1, 2]} camera={{ position: [6, 1, 20], fov: 100, near: 1 }}>
                 <ambientLight intensity={0.9} />
                 <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
                 <Suspense fallback={null}>
@@ -112,7 +122,7 @@ export default function FordColor() {
                 </Suspense>
                 <OrbitControls />
             </Canvas>
-            <Picker  />
+            <Picker />
         </div>
 
     )
