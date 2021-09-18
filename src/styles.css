@@ -1,0 +1,14 @@
+@import url("https://rsms.me/inter/inter.css");
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.picker {
+  position: absolute !important;
+  top: 74px;
+  left: 70px;
+  width: 180px !important;
+  height: 180px !important;
+}

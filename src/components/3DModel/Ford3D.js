@@ -2,6 +2,7 @@ import React, { Suspense, useRef, useState } from "react"
 import { Canvas } from "@react-three/fiber"
 import { ContactShadows, Environment, useGLTF, OrbitControls } from "@react-three/drei"
 import { proxy, useSnapshot } from "valtio"
+import { Link } from "react-router-dom"
 
 const state = proxy({
     current: null,
@@ -116,6 +117,12 @@ export default function Perseverance() {
                         </Suspense>
                         <OrbitControls />
                     </Canvas>
+                    <Link to="/fordColor" className="md:w-1/3">
+                        <button
+                            className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-64 my-4 ml-8 py-4 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 ease-linear transition-all duration-150 font-fontVollkorn"
+                            type="button"
+                        >Customize</button>
+                    </Link>
                 </div>
 
                 <div className="mt-16 md:mt-0 md:col-span-1 p-4">

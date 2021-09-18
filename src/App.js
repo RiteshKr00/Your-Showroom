@@ -4,10 +4,7 @@ import BMW from './pages/3DModelPage/BMW'
 import Ford from './pages/3DModelPage/Ford'
 import Mercedes from './pages/3DModelPage/Mercedes'
 import RollsRoyce from './pages/3DModelPage/RollsRoyce'
-import Chatbot from "./components/Chatbot/Chatbot"
 import FordColor from './components/3DModelColor/FordColor'
-
-import './App.css';
 
 function App() {
   return (
@@ -22,8 +19,6 @@ function App() {
         {/* Routes for Cars color */}
         <Route path='/fordColor' exact component={FordColor} />
       </Switch>
-
-      <Chatbot />
 
     </Router>
   );
