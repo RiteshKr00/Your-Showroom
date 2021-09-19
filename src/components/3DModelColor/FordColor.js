@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
   ContactShadows,
@@ -313,6 +314,7 @@ function Picker() {
 export default function FordColor() {
   return (
     <div className="w-full h-screen cursor-pointer">
+            <Link to="/" className="m-4">Return home</Link>
       <Canvas shadows dpr={[1, 2]} camera={{ position: [0, -80, 10], fov: 20 }}>
         <spotLight
           intensity={0.5}
