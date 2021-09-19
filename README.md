@@ -2,45 +2,43 @@
 # EduSmart
 
 ## Tagline
-Lets Make it Real   
+A new way to customize cars.
 <!-- ![3d](https://user-images.githubusercontent.com/64855593/132103582-1ef1652d-a5da-4dbc-ba45-ae4ee4b4e640.gif) -->
 # 
-<img src="https://user-images.githubusercontent.com/64855593/132103582-1ef1652d-a5da-4dbc-ba45-ae4ee4b4e640.gif" width="250px" >
 
 
 ## Problems It Solves
-In this pandemic, situation E-learning has proved a new and efficient method. For the past year, students are stuck in their homes and have attended numerous online classes. But online classes are monotonous and concepts taught are not retained by our minds. The situation becomes worse when a subject is mostly based on practicals because actually visualization is most important in such subjects as Aerospace, Biology, and many more. With this application, we focus to solve this problem. It utilizes 3D, Augmented reality to give, real-life simulations or feels of various models and make the learning process more impactful and interesting. With an interactive live feature, students can ask the teacher their doubts instantly and also can discuss among themselves.
+Do you regret changing your car's color and it is not up to your mark?
+
+Well well.. we have a solution for you,
+Presenting, YourShowroom - a new way to customize cars. Here you can view the 3D model of your car and play with your car's colors so that you can choose the best color that fits your car.
 ## Live demo
 
-The site is deployed throught Vercel, which you can view from [here](https://edu-smart.vercel.app/)  
-Checkout the ppt from [here](https://www.canva.com/design/DAEpFl8JPvs/4wUFIgirVNxxOuMvdLS7MQ/view?utm_content=DAEpFl8JPvs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+The site is deployed throught Vercel, which you can view from [here](https://your-showroom.vercel.app/)  
+
 
 ## Demo video
 
-Checkout the complete demo video from [here](https://youtu.be/WpuTS0YcoEQ)
+Checkout the complete demo video from [here](https://youtu.be/WjqWkK_6OTE)
 
 ## 🚀 Main Features
 
 - Interactive 3D Models
-- Click on the Perseverance Rover and get information about different parts
-- Learn with Augmented Reality
-- Chatbot Assistant
+- Click on the Cars and get information about different parts
+
 
 ## 💻 Tech Stack
 
-- SAWO Labs
 - React Js
-- Node Js
-- Express Js
-- Socket IO
+- Three Js
 - React-three-fiber
-- echoAR
+- React-colorful
+- valtio
 - Tailwind CSS & CSS
 
 ## 🤝 Credits
 
-- Passwordless Authentication: [sawolabs.com](https://sawolabs.com/)
-- AR: [echoAR](https://www.echoar.xyz/)
+
 - 3D Models: [sketchfab.com](https://sketchfab.com)
 
 ## Prerequisites
@@ -59,17 +57,9 @@ npm start
 ```
 
 ## 🖼️ Some glimps of the site
-Home page
-![home](https://user-images.githubusercontent.com/64153988/132110128-35b2c009-0877-4b1f-83fc-8e7c26d4f8eb.png)
 
-Medical Classroom
-![medical](https://user-images.githubusercontent.com/64153988/132110107-4425b106-566f-40e2-b458-fcec08a0aa97.png)
-Areospace Classroom
-![aerospace](https://user-images.githubusercontent.com/64153988/132110109-47cbc290-9e2b-4799-b021-8929dde4c6f7.png)
-AR in action
-![AR](https://user-images.githubusercontent.com/64153988/132110114-39cd748c-3f08-4c19-bc2b-6d595653d58a.png)
-Explore more
-![explore more](https://user-images.githubusercontent.com/64153988/132110115-55927862-d7a7-461a-91b2-0f3f67245f98.png)
-Chatroom
-![chatroom](https://user-images.githubusercontent.com/64153988/132110116-20ae04b6-9241-488c-bc9a-a61465a1a457.png)
-
+![5](https://user-images.githubusercontent.com/75125943/133928085-63cef828-059d-448f-b5ce-c6d69e10e569.png)
+![1](https://user-images.githubusercontent.com/75125943/133928066-5687cb02-db89-4d8b-aba1-32c57ce0a105.png)
+![2](https://user-images.githubusercontent.com/75125943/133928069-2b9e3b40-769e-47ca-9cdb-7d64587531de.png)
+![3](https://user-images.githubusercontent.com/75125943/133928071-872f9744-d0fb-4be3-ae7b-c38fd4307714.png)
+![4](https://user-images.githubusercontent.com/75125943/133928078-abb5c3f8-e8aa-477c-b67e-e55dd1e9f007.png)
