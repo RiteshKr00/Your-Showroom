@@ -57,12 +57,12 @@ npm start
 ```
 
 ## 🖼️ Some glimps of the site
-Home Page
+##Home Page
 ![5](https://user-images.githubusercontent.com/75125943/133928085-63cef828-059d-448f-b5ce-c6d69e10e569.png)
-Ford Mustang
+###Ford Mustang
 ![1](https://user-images.githubusercontent.com/75125943/133928066-5687cb02-db89-4d8b-aba1-32c57ce0a105.png)
 
 ![2](https://user-images.githubusercontent.com/75125943/133928069-2b9e3b40-769e-47ca-9cdb-7d64587531de.png)
 ![3](https://user-images.githubusercontent.com/75125943/133928071-872f9744-d0fb-4be3-ae7b-c38fd4307714.png)
-Rolls Royce Ghost
+###Rolls Royce Ghost
 ![4](https://user-images.githubusercontent.com/75125943/133928078-abb5c3f8-e8aa-477c-b67e-e55dd1e9f007.png)
