@@ -117,7 +117,7 @@ export default function Perseverance() {
                         </Suspense>
                         <OrbitControls />
                     </Canvas>
-                    <Link to="/fordColor" className="md:w-1/3">
+                    <Link to="/paint" className="md:w-1/3">
                         <button
                             className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 w-64 my-4 ml-8 py-4 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 ease-linear transition-all duration-150 font-fontVollkorn"
                             type="button"
